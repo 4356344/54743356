@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>mmm97</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body bgcolor="black">
+	<h1 style="color:white;">как тебе твое бытие</h1>
+	<input type="text" id="at" name="" style="position: absolute;left:1%;top:7%;">
+	<input type="button" value="Отправить" onclick="submit()" style="position:absolute;left:16%;top:7%;">
+	<p style="color: #585A67; position: absolute; right:0px;bottom:0px;">22.08</p>
+	<script type="text/javascript">
+		function submit(){
+			if(CryptoJS.SHA1(document.getElementById("at").value).toString() == "210e1223fce4a4d9881cc3b38f9efb079230cb79"){
+				document.location.replace("CODE.html")
+			}
+		}
+	</script>
+</body>
+</html>
